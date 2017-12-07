@@ -1,1 +1,1 @@
-##An implementation of multi-cycle-cpu of MIPS architecture.
+## An implementation of multi-cycle-cpu of MIPS architecture.
