@@ -1,0 +1,232 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Fri Dec 08 20:36:43 2017
+# Process ID: 5568
+# Current directory: C:/Users/TAN/Desktop/multi-cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9664 C:\Users\TAN\Desktop\multi-cpu\multi-cpu.xpr
+# Log file: C:/Users/TAN/Desktop/multi-cpu/vivado.log
+# Journal file: C:/Users/TAN/Desktop/multi-cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/TAN/Desktop/multi-cpu/multi-cpu.xpr
+launch_simulation
+source multi_Cpu_sim.tcl
+add_wave {{/multi_Cpu_sim/uut/Ins_Mem_inst/Ins_mem}} 
+add_wave {{/multi_Cpu_sim/uut/regFile/regFile[1]}} {{/multi_Cpu_sim/uut/regFile/regFile[2]}} {{/multi_Cpu_sim/uut/regFile/regFile[3]}} {{/multi_Cpu_sim/uut/regFile/regFile[4]}} {{/multi_Cpu_sim/uut/regFile/regFile[5]}} {{/multi_Cpu_sim/uut/regFile/regFile[6]}} {{/multi_Cpu_sim/uut/regFile/regFile[7]}} {{/multi_Cpu_sim/uut/regFile/regFile[8]}} {{/multi_Cpu_sim/uut/regFile/regFile[9]}} {{/multi_Cpu_sim/uut/regFile/regFile[10]}} {{/multi_Cpu_sim/uut/regFile/regFile[11]}} {{/multi_Cpu_sim/uut/regFile/regFile[12]}} 
+add_wave {{/multi_Cpu_sim/uut/pc_inst/IAddrIn}} {{/multi_Cpu_sim/uut/pc_inst/IAddrOut}} 
+add_wave {{/multi_Cpu_sim/uut/IAddrOut}} 
+add_wave {{/multi_Cpu_sim/uut/control_unit/state_now}} 
+restart
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+source multi_Cpu_sim.tcl
+add_wave {{/multi_Cpu_sim/uut/IAddrOut}} 
+add_wave {{/multi_Cpu_sim/uut/IDataOut}} 
+add_wave {{/multi_Cpu_sim/uut/Ins_Mem_inst/Ins_mem}} 
+add_wave {{/multi_Cpu_sim/uut/regFile/regFile[1]}} {{/multi_Cpu_sim/uut/regFile/regFile[2]}} {{/multi_Cpu_sim/uut/regFile/regFile[3]}} {{/multi_Cpu_sim/uut/regFile/regFile[4]}} {{/multi_Cpu_sim/uut/regFile/regFile[5]}} {{/multi_Cpu_sim/uut/regFile/regFile[6]}} {{/multi_Cpu_sim/uut/regFile/regFile[7]}} {{/multi_Cpu_sim/uut/regFile/regFile[8]}} {{/multi_Cpu_sim/uut/regFile/regFile[9]}} {{/multi_Cpu_sim/uut/regFile/regFile[10]}} {{/multi_Cpu_sim/uut/regFile/regFile[11]}} {{/multi_Cpu_sim/uut/regFile/regFile[12]}} 
+add_wave {{/multi_Cpu_sim/uut/control_unit/state_now}} 
+restart
+run 10 us
+run 10 us
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/control_unit/opcode}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/Write_Data}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/result}} 
+restart
+run 10 us
+relaunch_sim
+relaunch_sim
+close [ open C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Selector_Dst.v w ]
+add_files C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Selector_Dst.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source multi_Cpu_sim.tcl
+add_wave {{/multi_Cpu_sim/uut/Ins_Mem_inst/Ins_mem}} 
+add_wave {{/multi_Cpu_sim/uut/pc_inst/IAddrOut}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/Ins_Mem_inst/IDataOut}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/op}} {{/multi_Cpu_sim/uut/rs}} {{/multi_Cpu_sim/uut/rt}} {{/multi_Cpu_sim/uut/rd}} {{/multi_Cpu_sim/uut/sa}} {{/multi_Cpu_sim/uut/immediate}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/Read_data1}} {{/multi_Cpu_sim/uut/Read_data2}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/InALU_A}} {{/multi_Cpu_sim/uut/InALU_B}} 
+add_wave {{/multi_Cpu_sim/uut/Ext_immediate}} 
+add_wave {{/multi_Cpu_sim/uut/result}} 
+add_wave {{/multi_Cpu_sim/uut/ALUOp}} 
+add_wave {{/multi_Cpu_sim/uut/control_unit/state_now}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/control_unit/state_next}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/control_unit/CLK}} 
+restart
+run 10 us
+relaunch_sim
+add_wave {{/multi_Cpu_sim/uut/Write_Data}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/regFile/regFile[1]}} {{/multi_Cpu_sim/uut/regFile/regFile[2]}} {{/multi_Cpu_sim/uut/regFile/regFile[3]}} {{/multi_Cpu_sim/uut/regFile/regFile[4]}} {{/multi_Cpu_sim/uut/regFile/regFile[5]}} {{/multi_Cpu_sim/uut/regFile/regFile[6]}} {{/multi_Cpu_sim/uut/regFile/regFile[7]}} {{/multi_Cpu_sim/uut/regFile/regFile[8]}} {{/multi_Cpu_sim/uut/regFile/regFile[9]}} {{/multi_Cpu_sim/uut/regFile/regFile[10]}} {{/multi_Cpu_sim/uut/regFile/regFile[11]}} {{/multi_Cpu_sim/uut/regFile/regFile[12]}} 
+restart
+run 10 us
+relaunch_sim
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/regFile/Write_data}} 
+restart
+run 10 us
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/regFile/Write_reg}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/DBData}} 
+relaunch_sim
+relaunch_sim
+add_wave {{/multi_Cpu_sim/uut/control_unit/PCWre}} {{/multi_Cpu_sim/uut/control_unit/ALUSrcA}} {{/multi_Cpu_sim/uut/control_unit/ALUSrcB}} {{/multi_Cpu_sim/uut/control_unit/DBDataSrc}} {{/multi_Cpu_sim/uut/control_unit/RegWre}} {{/multi_Cpu_sim/uut/control_unit/WrRegDSrc}} {{/multi_Cpu_sim/uut/control_unit/InsMemRW}} {{/multi_Cpu_sim/uut/control_unit/RD}} {{/multi_Cpu_sim/uut/control_unit/WR}} {{/multi_Cpu_sim/uut/control_unit/IRWre}} {{/multi_Cpu_sim/uut/control_unit/ExtSel}} {{/multi_Cpu_sim/uut/control_unit/PCSrc}} {{/multi_Cpu_sim/uut/control_unit/RegDst}} {{/multi_Cpu_sim/uut/control_unit/ALUOp}} 
+add_wave {{/multi_Cpu_sim/uut/control_unit/PCWre}} {{/multi_Cpu_sim/uut/control_unit/ALUSrcA}} {{/multi_Cpu_sim/uut/control_unit/ALUSrcB}} {{/multi_Cpu_sim/uut/control_unit/DBDataSrc}} {{/multi_Cpu_sim/uut/control_unit/RegWre}} {{/multi_Cpu_sim/uut/control_unit/WrRegDSrc}} {{/multi_Cpu_sim/uut/control_unit/InsMemRW}} {{/multi_Cpu_sim/uut/control_unit/RD}} {{/multi_Cpu_sim/uut/control_unit/WR}} {{/multi_Cpu_sim/uut/control_unit/IRWre}} {{/multi_Cpu_sim/uut/control_unit/ExtSel}} {{/multi_Cpu_sim/uut/control_unit/PCSrc}} {{/multi_Cpu_sim/uut/control_unit/RegDst}} {{/multi_Cpu_sim/uut/control_unit/ALUOp}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/DBData_ram}} 
+restart
+run 10 us
+relaunch_sim
+relaunch_sim
+run 10 us
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/result_alu}} 
+restart
+run 10 us
+relaunch_sim
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/select_write_reg/In0}} {{/multi_Cpu_sim/uut/select_write_reg/In1}} {{/multi_Cpu_sim/uut/select_write_reg/In2}} {{/multi_Cpu_sim/uut/select_write_reg/Selector}} {{/multi_Cpu_sim/uut/select_write_reg/Out}} 
+restart
+run 10 us
+relaunch_sim
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/ram_inst/memory[12]}} {{/multi_Cpu_sim/uut/ram_inst/memory[13]}} {{/multi_Cpu_sim/uut/ram_inst/memory[14]}} {{/multi_Cpu_sim/uut/ram_inst/memory[15]}} 
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/zero}} {{/multi_Cpu_sim/uut/sign}} 
+add_wave {{/multi_Cpu_sim/uut/Reset}} 
+add_wave {{/multi_Cpu_sim/uut/IAddrIn}} 
+add_wave {{/multi_Cpu_sim/uut/IAddrOut}} 
+add_wave {{/multi_Cpu_sim/uut/zero}} {{/multi_Cpu_sim/uut/sign}} 
+add_wave {{/multi_Cpu_sim/uut/regFile/regFile[1]}} {{/multi_Cpu_sim/uut/regFile/regFile[2]}} {{/multi_Cpu_sim/uut/regFile/regFile[3]}} {{/multi_Cpu_sim/uut/regFile/regFile[4]}} {{/multi_Cpu_sim/uut/regFile/regFile[5]}} {{/multi_Cpu_sim/uut/regFile/regFile[6]}} {{/multi_Cpu_sim/uut/regFile/regFile[7]}} {{/multi_Cpu_sim/uut/regFile/regFile[8]}} {{/multi_Cpu_sim/uut/regFile/regFile[9]}} {{/multi_Cpu_sim/uut/regFile/regFile[10]}} {{/multi_Cpu_sim/uut/regFile/regFile[11]}} {{/multi_Cpu_sim/uut/regFile/regFile[12]}} {{/multi_Cpu_sim/uut/regFile/regFile[13]}} {{/multi_Cpu_sim/uut/regFile/regFile[14]}} 
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/CLK}} 
+restart
+run 10 us
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/control_unit/PCSrc}} 
+add_wave {{/multi_Cpu_sim/uut/control_unit/beqop}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/control_unit/zero}} 
+add_wave {{/multi_Cpu_sim/uut/control_unit/state_now}} 
+add_wave {{/multi_Cpu_sim/uut/control_unit/PCWre}} 
+add_wave {{/multi_Cpu_sim/uut/control_unit/zero}} 
+add_wave {{/multi_Cpu_sim/uut/IAddrIn}} 
+add_wave {{/multi_Cpu_sim/uut/PCFromBranch}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/PCAddedFour}} 
+restart
+run 10 us
+relaunch_sim
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/ram_inst/memory[12]}} {{/multi_Cpu_sim/uut/ram_inst/memory[13]}} {{/multi_Cpu_sim/uut/ram_inst/memory[14]}} {{/multi_Cpu_sim/uut/ram_inst/memory[15]}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/ram_inst/DataIn}} 
+add_wave {{/multi_Cpu_sim/uut/ram_inst/Daddr}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/control_unit/WR}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/result}} 
+add_wave {{/multi_Cpu_sim/uut/alu32/ALUopcode}} {{/multi_Cpu_sim/uut/alu32/rega}} {{/multi_Cpu_sim/uut/alu32/regb}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/control_unit/ALUSrcB}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/alu32/result}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/ALUoutDR}} 
+restart
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/DBDR}} 
+add_wave {{/multi_Cpu_sim/uut/Write_Data}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/DBData}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/regFile/Write_reg}} 
+add_wave {{/multi_Cpu_sim/uut/regFile/Write_data}} 
+add_wave {{/multi_Cpu_sim/uut/regFile/WE}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/result_alu}} 
+add_wave {{/multi_Cpu_sim/uut/alu32/result}} 
+add_wave {{/multi_Cpu_sim/uut/alu32/ALUopcode}} 
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+save_wave_config {C:/Users/TAN/Desktop/multi-cpu/multi_Cpu_sim_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/TAN/Desktop/multi-cpu/multi_Cpu_sim_behav.wcfg
+set_property xsim.view C:/Users/TAN/Desktop/multi-cpu/multi_Cpu_sim_behav.wcfg [get_filesets sim_1]
+close_sim

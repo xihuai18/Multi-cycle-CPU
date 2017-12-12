@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="multi_Cpu_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="multi_Cpu_sim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="9043760000fs"></ZoomStartTime>
+      <ZoomEndTime time="10245760001fs"></ZoomEndTime>
+      <Cursor1Time time="11000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="40" />
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/Reset" type="logic">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/IAddrOut" type="array">
+      <obj_property name="ElementShortName">IAddrOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IAddrOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/control_unit/state_now" type="array">
+      <obj_property name="ElementShortName">state_now[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state_now[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/sign" type="logic">
+      <obj_property name="ElementShortName">sign</obj_property>
+      <obj_property name="ObjectShortName">sign</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/control_unit/PCWre" type="logic">
+      <obj_property name="ElementShortName">PCWre</obj_property>
+      <obj_property name="ObjectShortName">PCWre</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/control_unit/PCSrc" type="array">
+      <obj_property name="ElementShortName">PCSrc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">PCSrc[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/regFile[1]" type="array">
+      <obj_property name="ElementShortName">[1][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regFile[1][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/regFile[2]" type="array">
+      <obj_property name="ElementShortName">[2][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regFile[2][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/regFile[3]" type="array">
+      <obj_property name="ElementShortName">[3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regFile[3][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/regFile[4]" type="array">
+      <obj_property name="ElementShortName">[4][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regFile[4][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/regFile[5]" type="array">
+      <obj_property name="ElementShortName">[5][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regFile[5][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/regFile[6]" type="array">
+      <obj_property name="ElementShortName">[6][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regFile[6][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/regFile[7]" type="array">
+      <obj_property name="ElementShortName">[7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regFile[7][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/regFile[8]" type="array">
+      <obj_property name="ElementShortName">[8][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regFile[8][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/regFile[9]" type="array">
+      <obj_property name="ElementShortName">[9][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regFile[9][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/regFile[10]" type="array">
+      <obj_property name="ElementShortName">[10][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regFile[10][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/regFile[11]" type="array">
+      <obj_property name="ElementShortName">[11][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regFile[11][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/regFile[12]" type="array">
+      <obj_property name="ElementShortName">[12][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regFile[12][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/regFile[13]" type="array">
+      <obj_property name="ElementShortName">[13][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regFile[13][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/regFile[14]" type="array">
+      <obj_property name="ElementShortName">[14][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regFile[14][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/ram_inst/memory[12]" type="array">
+      <obj_property name="ElementShortName">[12][7:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[12][7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/ram_inst/memory[13]" type="array">
+      <obj_property name="ElementShortName">[13][7:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[13][7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/ram_inst/memory[14]" type="array">
+      <obj_property name="ElementShortName">[14][7:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[14][7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/ram_inst/memory[15]" type="array">
+      <obj_property name="ElementShortName">[15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[15][7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/result" type="array">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/alu32/ALUopcode" type="array">
+      <obj_property name="ElementShortName">ALUopcode[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUopcode[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/alu32/rega" type="array">
+      <obj_property name="ElementShortName">rega[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rega[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/alu32/regb" type="array">
+      <obj_property name="ElementShortName">regb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">regb[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/control_unit/ALUSrcB" type="logic">
+      <obj_property name="ElementShortName">ALUSrcB</obj_property>
+      <obj_property name="ObjectShortName">ALUSrcB</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/alu32/result" type="array">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/ALUoutDR/in" type="array">
+      <obj_property name="ElementShortName">in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/ALUoutDR/out" type="array">
+      <obj_property name="ElementShortName">out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/DBData" type="array">
+      <obj_property name="ElementShortName">DBData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBData[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/Write_reg" type="array">
+      <obj_property name="ElementShortName">Write_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Write_reg[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/Write_data" type="array">
+      <obj_property name="ElementShortName">Write_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Write_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/regFile/WE" type="logic">
+      <obj_property name="ElementShortName">WE</obj_property>
+      <obj_property name="ObjectShortName">WE</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/result_alu" type="array">
+      <obj_property name="ElementShortName">result_alu[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result_alu[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/alu32/result" type="array">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/multi_Cpu_sim/uut/alu32/ALUopcode" type="array">
+      <obj_property name="ElementShortName">ALUopcode[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUopcode[2:0]</obj_property>
+   </wvobject>
+</wave_config>

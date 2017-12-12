@@ -1,0 +1,299 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Sat Dec 09 10:07:31 2017
+# Process ID: 2220
+# Current directory: C:/Users/TAN/Desktop/multi-cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3360 C:\Users\TAN\Desktop\multi-cpu\multi-cpu.xpr
+# Log file: C:/Users/TAN/Desktop/multi-cpu/vivado.log
+# Journal file: C:/Users/TAN/Desktop/multi-cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/TAN/Desktop/multi-cpu/multi-cpu.xpr
+
+launch_simulation
+open_wave_config C:/Users/TAN/Desktop/multi-cpu/multi_Cpu_sim_behav.wcfg
+source multi_Cpu_sim.tcl
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/IAddrIn}} 
+restart
+run 10 us
+relaunch_sim
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/pc_inst/IAddrOut_reg}} 
+restart
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/PCWre}} {{/multi_Cpu_sim/uut/ALUSrcA}} {{/multi_Cpu_sim/uut/ALUSrcB}} {{/multi_Cpu_sim/uut/DBDataSrc}} {{/multi_Cpu_sim/uut/RegWre}} {{/multi_Cpu_sim/uut/WrRegDSrc}} {{/multi_Cpu_sim/uut/InsMemRW}} {{/multi_Cpu_sim/uut/RD}} {{/multi_Cpu_sim/uut/WR}} {{/multi_Cpu_sim/uut/IRWre}} {{/multi_Cpu_sim/uut/ExtSel}} {{/multi_Cpu_sim/uut/RegDst}} {{/multi_Cpu_sim/uut/PCSrc}} {{/multi_Cpu_sim/uut/ALUOp}} 
+restart
+run 40 us
+add_wave {{/multi_Cpu_sim/uut/Ins_Mem_inst/IDataOut}} 
+restart
+run 40 us
+close [ open C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Show.v w ]
+add_files C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Show.v
+close [ open C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/clkdiv.v w ]
+add_files C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/clkdiv.v
+close [ open C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/avoidShake.v w ]
+add_files C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/avoidShake.v
+close [ open C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/_7_seg_display.v w ]
+add_files C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/_7_seg_display.v
+close [ open C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/display.v w ]
+add_files C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/display.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {code[7]} {code[6]} {code[5]} {code[4]} {code[3]} {code[2]} {code[1]} {code[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {place[3]} {place[2]} {place[1]} {place[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SW_in[1]} {SW_in[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list CLK_BUTN]]
+set_property IOSTANDARD LVCMOS25 [get_ports [list mclk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list mclk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Reset]]
+place_ports {SW_in[0]} V16
+place_ports {SW_in[0]} V15
+place_ports {SW_in[0]} V17
+place_ports {SW_in[1]} V16
+place_ports CLK_BUTN W19
+place_ports mclk T18
+startgroup
+set_property package_pin "" [get_ports [list  mclk]]
+place_ports Reset T18
+endgroup
+place_ports mclk W5
+place_ports {place[3]} W4
+place_ports {place[2]} V4
+place_ports {place[1]} U4
+place_ports {place[0]} U2
+file mkdir C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/constrs_1/new
+close [ open C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/constrs_1/new/multi_cpu.xdc w ]
+add_files -fileset constrs_1 C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/constrs_1/new/multi_cpu.xdc
+set_property target_constrs_file C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/constrs_1/new/multi_cpu.xdc [current_fileset -constrset]
+save_constraints -force
+place_ports {code[7]} V7
+place_ports {code[6]} U7
+place_ports {code[5]} V5
+place_ports {code[4]} U5
+place_ports {code[3]} V8
+place_ports {code[2]} U8
+place_ports {code[1]} W6
+place_ports {code[0]} W7
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+set_property STEPS.WRITE_BITSTREAM.ARGS.RAW_BITFILE true [get_runs impl_1]
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev  [lindex [get_cfgmem_parts {s25fl032p-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.PRM_FILES [list "" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+endgroup
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev  [lindex [get_cfgmem_parts {s25fl032p-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.PRM_FILES [list "" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+endgroup
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/TAN/Desktop/multi-cpu/multi_Cpu_sim_behav.wcfg
+source multi_Cpu_sim.tcl
+run 40 us
+add_wave {{/multi_Cpu_sim/uut/IDataOut}} 
+add_wave {{/multi_Cpu_sim/uut/IDataOut}} 
+relaunch_sim
+run 40 us
+add_wave {{/multi_Cpu_sim/uut/op}} {{/multi_Cpu_sim/uut/rs}} {{/multi_Cpu_sim/uut/rt}} {{/multi_Cpu_sim/uut/rd}} {{/multi_Cpu_sim/uut/sa}} {{/multi_Cpu_sim/uut/immediate}} 
+add_wave {{/multi_Cpu_sim/uut/address}} 
+restart
+run 10 us
+run 10 us
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/TAN/Desktop/multi-cpu/multi_Cpu_sim_behav.wcfg
+source multi_Cpu_sim.tcl
+relaunch_sim
+run 10 us
+add_wave {{/multi_Cpu_sim/uut/IDataOut}} 
+restart
+run 10 us
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_sim

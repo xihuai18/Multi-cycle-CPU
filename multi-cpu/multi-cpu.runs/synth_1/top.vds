@@ -1,0 +1,819 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Sat Dec 09 16:05:33 2017
+# Process ID: 2596
+# Current directory: C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/synth_1
+# Command line: vivado.exe -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/synth_1/top.vds
+# Journal file: C:/Users/TAN/Desktop/multi-cpu/multi-cpu.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 285.762 ; gain = 114.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:4]
+	Parameter thirty_one bound to: 5'b11111 
+INFO: [Synth 8-638] synthesizing module 'PC' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/PC.v:1]
+INFO: [Synth 8-256] done synthesizing module 'PC' (1#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/PC.v:1]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Memory' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Instruction_Memory.v:1]
+INFO: [Synth 8-3876] $readmem data file '../../../test.txt' is read successfully [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Instruction_Memory.v:11]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Memory' (2#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Instruction_Memory.v:1]
+INFO: [Synth 8-638] synthesizing module 'IR' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/IR.v:1]
+INFO: [Synth 8-256] done synthesizing module 'IR' (3#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/IR.v:1]
+INFO: [Synth 8-638] synthesizing module 'Extend' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Extend.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Extend' (4#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Extend.v:1]
+INFO: [Synth 8-638] synthesizing module 'Selector_Dst' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Selector_Dst.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Selector_Dst' (5#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Selector_Dst.v:1]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RegisterFile.v:1]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (6#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RegisterFile.v:1]
+INFO: [Synth 8-638] synthesizing module 'D_latch' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/D_latch.v:1]
+INFO: [Synth 8-256] done synthesizing module 'D_latch' (7#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/D_latch.v:1]
+INFO: [Synth 8-638] synthesizing module 'RAM' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:2]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (8#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:2]
+INFO: [Synth 8-638] synthesizing module 'ALU32' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ALU32.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ALU32.v:14]
+INFO: [Synth 8-256] done synthesizing module 'ALU32' (9#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ALU32.v:1]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:1]
+	Parameter sIF bound to: 4'b0000 
+	Parameter sID bound to: 4'b0001 
+	Parameter EAL bound to: 4'b1000 
+	Parameter EBR bound to: 4'b0100 
+	Parameter ELS bound to: 4'b0010 
+	Parameter MLD bound to: 4'b0011 
+	Parameter MST bound to: 4'b0101 
+	Parameter WAL bound to: 4'b1001 
+	Parameter WLD bound to: 4'b0110 
+WARNING: [Synth 8-567] referenced signal 'jop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'jalop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'jrop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'haltop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'addop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'addiop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'orop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'oriop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'subop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'sltop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'sllop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'sltiop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'andop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'beqop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'bneop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'bgtzop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'lwop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:52]
+WARNING: [Synth 8-567] referenced signal 'jalop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:102]
+WARNING: [Synth 8-567] referenced signal 'jop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:102]
+WARNING: [Synth 8-567] referenced signal 'jrop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:102]
+WARNING: [Synth 8-567] referenced signal 'sllop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:102]
+WARNING: [Synth 8-567] referenced signal 'addiop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:102]
+WARNING: [Synth 8-567] referenced signal 'oriop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:102]
+WARNING: [Synth 8-567] referenced signal 'sltiop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:102]
+WARNING: [Synth 8-567] referenced signal 'lwop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:102]
+WARNING: [Synth 8-567] referenced signal 'beqop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:102]
+WARNING: [Synth 8-567] referenced signal 'bneop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:102]
+WARNING: [Synth 8-567] referenced signal 'bgtzop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:102]
+WARNING: [Synth 8-567] referenced signal 'addop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:102]
+WARNING: [Synth 8-567] referenced signal 'subop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:102]
+WARNING: [Synth 8-567] referenced signal 'orop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:102]
+WARNING: [Synth 8-567] referenced signal 'andop' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:102]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (10#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:1]
+INFO: [Synth 8-638] synthesizing module 'Four_Way_Selector' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Four_Way_Selector.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Four_Way_Selector.v:11]
+INFO: [Synth 8-256] done synthesizing module 'Four_Way_Selector' (11#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Four_Way_Selector.v:1]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/clkdiv.v:2]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (12#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/clkdiv.v:2]
+INFO: [Synth 8-638] synthesizing module 'display' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/display.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/display.v:12]
+WARNING: [Synth 8-567] referenced signal 'PC' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/display.v:10]
+WARNING: [Synth 8-567] referenced signal 'PCNext' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/display.v:10]
+WARNING: [Synth 8-567] referenced signal 'RSAddr' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/display.v:10]
+WARNING: [Synth 8-567] referenced signal 'RSData' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/display.v:10]
+WARNING: [Synth 8-567] referenced signal 'RTAddr' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/display.v:10]
+WARNING: [Synth 8-567] referenced signal 'RTData' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/display.v:10]
+WARNING: [Synth 8-567] referenced signal 'ALUResult' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/display.v:10]
+WARNING: [Synth 8-567] referenced signal 'DB' should be on the sensitivity list [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/display.v:10]
+INFO: [Synth 8-256] done synthesizing module 'display' (13#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/display.v:1]
+INFO: [Synth 8-638] synthesizing module 'Show' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Show.v:1]
+INFO: [Synth 8-638] synthesizing module '_7_seg_display' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/_7_seg_display.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/_7_seg_display.v:8]
+INFO: [Synth 8-256] done synthesizing module '_7_seg_display' (14#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/_7_seg_display.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Show' (15#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Show.v:1]
+INFO: [Synth 8-638] synthesizing module 'avoidShake' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/avoidShake.v:1]
+INFO: [Synth 8-256] done synthesizing module 'avoidShake' (16#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/avoidShake.v:1]
+WARNING: [Synth 8-3848] Net IDataIn in module/entity top does not have driver. [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:31]
+INFO: [Synth 8-256] done synthesizing module 'top' (17#1) [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 329.801 ; gain = 158.520
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[31] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[30] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[29] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[28] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[27] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[26] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[25] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[24] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[23] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[22] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[21] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[20] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[19] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[18] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[17] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[16] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[15] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[14] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[13] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[12] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[11] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[10] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[9] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[8] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[7] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[6] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[5] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[4] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[3] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[2] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[1] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Ins_Mem_inst:IDataIn[0] to constant 0 [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/top.v:46]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 329.801 ; gain = 158.520
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/constrs_1/new/multi_cpu.xdc]
+Finished Parsing XDC File [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/constrs_1/new/multi_cpu.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/constrs_1/new/multi_cpu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 618.000 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 618.000 ; gain = 446.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 618.000 ; gain = 446.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 618.000 ; gain = 446.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "regFile_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "memory_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-802] inferred FSM for state register 'state_now_reg' in module 'ControlUnit'
+INFO: [Synth 8-5544] ROM "ALUOp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WR" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "InsMemRW" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALUOp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WR" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "InsMemRW" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PCSrc" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegDst" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PCSrc" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'place_reg' in module 'Show'
+INFO: [Synth 8-5544] ROM "place" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'IDataOut_reg' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Instruction_Memory.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[0]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[1]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[2]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[3]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[4]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[5]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[6]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[7]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[8]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[9]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[10]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[11]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[12]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[13]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[14]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[15]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[16]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[17]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[18]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[19]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[20]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[21]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[22]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[23]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[24]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[25]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[26]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[27]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[28]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[29]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[30]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[31]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[32]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[33]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[34]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[35]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[36]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[37]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[38]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[39]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[40]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[41]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[42]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[43]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[44]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[45]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[46]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[47]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[48]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[49]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[50]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[51]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[52]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[53]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[54]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[55]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[56]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[57]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[58]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[59]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[60]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[61]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[62]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[63]' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/RAM.v:12]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     sIF |                        000000001 |                             0000
+                     sID |                        000000010 |                             0001
+                     EAL |                        000000100 |                             1000
+                     WAL |                        000100000 |                             1001
+                     EBR |                        000001000 |                             0100
+                     ELS |                        000010000 |                             0010
+                     MLD |                        001000000 |                             0011
+                     WLD |                        100000000 |                             0110
+                     MST |                        010000000 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_now_reg' using encoding 'one-hot' in module 'ControlUnit'
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcA_reg' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:113]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcB_reg' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:121]
+WARNING: [Synth 8-327] inferring latch for variable 'PCSrc_reg' [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/ControlUnit.v:172]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                              000 |                             1111
+*
+                  iSTATE |                              001 |                             1110
+                 iSTATE0 |                              010 |                             1101
+                 iSTATE1 |                              011 |                             1011
+                 iSTATE2 |                              100 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'place_reg' using encoding 'sequential' in module 'Show'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 618.000 ; gain = 446.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 1     
+	  13 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 192   
+	   4 Input      8 Bit        Muxes := 2     
+	  16 Input      8 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 40    
+	   5 Input      1 Bit        Muxes := 64    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Instruction_Memory 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+Module Extend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module Selector_Dst 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module RegisterFile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 31    
+Module RAM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 192   
+	   5 Input      1 Bit        Muxes := 64    
+Module ALU32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input      9 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 1     
+Module Four_Way_Selector 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 2     
+Module _7_seg_display 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+Module Show 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+Module avoidShake 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 618.000 ; gain = 446.719
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design top has port code[7] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 618.000 ; gain = 446.719
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 618.000 ; gain = 446.719
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------+------------+---------------+----------------+
+|Module Name        | RTL Object | Depth x Width | Implemented As | 
++-------------------+------------+---------------+----------------+
+|Instruction_Memory | rom        | 128x8         | LUT            | 
+|Instruction_Memory | rom__1     | 128x8         | LUT            | 
+|Instruction_Memory | rom__2     | 128x8         | LUT            | 
+|Instruction_Memory | rom__3     | 128x8         | LUT            | 
+|top                | rom        | 128x8         | LUT            | 
+|top                | rom__4     | 128x8         | LUT            | 
+|top                | rom__5     | 128x8         | LUT            | 
+|top                | rom__6     | 128x8         | LUT            | 
++-------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\clk/q_reg[19] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\clk/q_reg[20] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\clk/q_reg[21] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\clk/q_reg[22] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\clk/q_reg[23] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\clk/q_reg[24] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\clk/q_reg[25] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\clk/q_reg[26] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[31] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[30] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[29] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[28] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[27] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[26] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[25] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[24] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[23] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[22] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[21] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[20] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[19] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[18] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[17] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[16] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[15] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[14] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[13] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[12] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[11] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[10] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[9] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\pc_inst/IAddrOut_reg_reg_rep[7] ) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 618.945 ; gain = 447.664
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 618.945 ; gain = 447.664
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 634.391 ; gain = 463.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 637.332 ; gain = 466.051
+---------------------------------------------------------------------------------
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 637.332 ; gain = 466.051
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 637.332 ; gain = 466.051
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 704.371 ; gain = 533.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/TAN/Desktop/multi-cpu/multi-cpu.srcs/sources_1/new/Instruction_Memory.v:17]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 704.371 ; gain = 533.090
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 704.371 ; gain = 533.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 704.371 ; gain = 533.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 704.371 ; gain = 533.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 704.371 ; gain = 533.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 704.371 ; gain = 533.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    65|
+|3     |LUT1   |   153|
+|4     |LUT2   |   174|
+|5     |LUT3   |   555|
+|6     |LUT4   |   172|
+|7     |LUT5   |   745|
+|8     |LUT6   |  1859|
+|9     |MUXF7  |   477|
+|10    |MUXF8  |    32|
+|11    |FDCE   |  1061|
+|12    |FDPE   |     1|
+|13    |FDRE   |   206|
+|14    |LD     |   544|
+|15    |LDCP   |     2|
+|16    |LDP    |     4|
+|17    |IBUF   |     5|
+|18    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+-------------------+------+
+|      |Instance       |Module             |Cells |
++------+---------------+-------------------+------+
+|1     |top            |                   |  6069|
+|2     |  ADR          |D_latch            |   112|
+|3     |  ALUoutDR     |D_latch_0          |   575|
+|4     |  BDR          |D_latch_1          |  1067|
+|5     |  DBDR         |D_latch_2          |    41|
+|6     |  Ins_Mem_inst |Instruction_Memory |    32|
+|7     |  alu32        |ALU32              |    16|
+|8     |  avshake      |avoidShake         |    29|
+|9     |  clk          |clkdiv             |    43|
+|10    |  control_unit |ControlUnit        |   363|
+|11    |  ir_inst      |IR                 |   277|
+|12    |  pc_inst      |PC                 |   191|
+|13    |  ram_inst     |RAM                |  1445|
+|14    |  regFile      |RegisterFile       |  1825|
+|15    |  show         |Show               |    33|
+|16    |    _7_seg     |_7_seg_display     |     7|
++------+---------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 704.371 ; gain = 533.090
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 103 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 704.371 ; gain = 208.977
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 704.371 ; gain = 533.090
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 620 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 6 inverter(s) to 1171 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 550 instances were transformed.
+  LD => LDCE: 544 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 2 instances
+  LDP => LDPE: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+201 Infos, 176 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 704.371 ; gain = 499.977
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 704.371 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 09 16:06:26 2017...

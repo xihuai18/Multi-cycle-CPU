@@ -1,0 +1,162 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
+| Date         : Sat Dec 09 16:07:04 2017
+| Host         : DESKTOP-3BPKRQB running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |   109 |
+| Minimum Number of register sites lost to control set restrictions |    62 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             688 |          369 |
+| No           | No                    | Yes                    |              31 |           12 |
+| No           | Yes                   | No                     |              24 |            6 |
+| Yes          | No                    | No                     |              44 |           24 |
+| Yes          | No                    | Yes                    |            1031 |          390 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+--------------------------------+----------------------------------+------------------+----------------+
+|            Clock Signal           |          Enable Signal         |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++-----------------------------------+--------------------------------+----------------------------------+------------------+----------------+
+|  control_unit/ALUSrcB_reg_i_2_n_0 |                                | control_unit/ALUSrcB_reg_i_3_n_0 |                1 |              1 |
+|  control_unit/PCSrc_reg[0]/G0     |                                |                                  |                1 |              1 |
+|  control_unit/PCSrc_reg[1]/G0     |                                |                                  |                1 |              1 |
+|  control_unit/ALUSrcA0            |                                | control_unit/ALUSrcA_reg_i_2_n_0 |                1 |              3 |
+|  clk/CLK                          |                                | Reset_IBUF                       |                1 |              3 |
+|  clk/out[0]                       |                                |                                  |                1 |              3 |
+|  clk/CLK                          | show/BCD[3]_i_1_n_0            |                                  |                2 |              4 |
+|  ALUoutDR/out_reg[7]_186[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_185[0]       |                                |                                  |                3 |              8 |
+|  ALUoutDR/out_reg[7]_184[0]       |                                |                                  |                3 |              8 |
+|  ALUoutDR/out_reg[7]_183[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_182[0]       |                                |                                  |                7 |              8 |
+|  ALUoutDR/out_reg[7]_181[0]       |                                |                                  |                7 |              8 |
+|  ALUoutDR/out_reg[7]_180[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_179[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_178[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_177[0]       |                                |                                  |                3 |              8 |
+|  ALUoutDR/out_reg[7]_176[0]       |                                |                                  |                2 |              8 |
+|  ALUoutDR/out_reg[7]_175[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_174[0]       |                                |                                  |                2 |              8 |
+|  ALUoutDR/out_reg[7]_173[0]       |                                |                                  |                3 |              8 |
+|  ALUoutDR/out_reg[7]_172[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_171[0]       |                                |                                  |                2 |              8 |
+|  ALUoutDR/out_reg[7]_170[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_169[0]       |                                |                                  |                6 |              8 |
+|  ALUoutDR/out_reg[7]_168[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_167[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_166[0]       |                                |                                  |                3 |              8 |
+|  ALUoutDR/out_reg[7]_165[0]       |                                |                                  |                3 |              8 |
+|  ALUoutDR/out_reg[7]_164[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_163[0]       |                                |                                  |                3 |              8 |
+|  ALUoutDR/out_reg[7]_162[0]       |                                |                                  |                6 |              8 |
+|  ALUoutDR/out_reg[7]_161[0]       |                                |                                  |                3 |              8 |
+|  ALUoutDR/out_reg[7]_160[0]       |                                |                                  |                3 |              8 |
+|  ALUoutDR/out_reg[7]_159[0]       |                                |                                  |                3 |              8 |
+|  ALUoutDR/out_reg[7]_158[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_157[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_156[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_155[0]       |                                |                                  |                3 |              8 |
+|  ALUoutDR/out_reg[7]_154[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_153[0]       |                                |                                  |                3 |              8 |
+|  ALUoutDR/out_reg[7]_152[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_150[0]       |                                |                                  |                7 |              8 |
+|  ALUoutDR/out_reg[7]_149[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_148[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_147[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_146[0]       |                                |                                  |                3 |              8 |
+|  ALUoutDR/out_reg[7]_145[0]       |                                |                                  |                6 |              8 |
+|  ALUoutDR/out_reg[7]_143[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_142[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_141[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_144[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_140[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_139[0]       |                                |                                  |                6 |              8 |
+|  ALUoutDR/out_reg[7]_151[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_137[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_135[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_134[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_136[0]       |                                |                                  |                6 |              8 |
+|  ALUoutDR/out_reg[7]_133[0]       |                                |                                  |                6 |              8 |
+|  ALUoutDR/out_reg[7]_132[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_131[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_130[0]       |                                |                                  |                3 |              8 |
+|  ALUoutDR/E[0]                    |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_192[0]       |                                |                                  |                2 |              8 |
+|  ALUoutDR/out_reg[7]_191[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_190[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_138[0]       |                                |                                  |                4 |              8 |
+|  ALUoutDR/out_reg[7]_189[0]       |                                |                                  |                7 |              8 |
+|  ALUoutDR/out_reg[7]_188[0]       |                                |                                  |                5 |              8 |
+|  ALUoutDR/out_reg[7]_187[0]       |                                |                                  |                5 |              8 |
+|  CLK_BUFG                         |                                | Reset_IBUF                       |                6 |              9 |
+|  mclk_IBUF_BUFG                   |                                | Reset_IBUF                       |                5 |             19 |
+|  clk/out[0]                       |                                | avshake/change                   |                4 |             20 |
+|  IRWre_BUFG                       |                                |                                  |               32 |             32 |
+| ~CLK_BUFG                         | ir_inst/E[0]                   | Reset_IBUF                       |               11 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[27][31][0] | Reset_IBUF                       |               13 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[4][31][0]  | Reset_IBUF                       |                8 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[24][31][0] | Reset_IBUF                       |               11 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[16][31][0] | Reset_IBUF                       |               10 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[31][31][0] | Reset_IBUF                       |               16 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[26][31][0] | Reset_IBUF                       |               12 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[21][31][0] | Reset_IBUF                       |               11 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[11][31][0] | Reset_IBUF                       |                9 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[29][31][0] | Reset_IBUF                       |               13 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[6][31][0]  | Reset_IBUF                       |               20 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[7][31][0]  | Reset_IBUF                       |               18 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[25][31][0] | Reset_IBUF                       |               10 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[22][31][0] | Reset_IBUF                       |               16 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[3][31][0]  | Reset_IBUF                       |               10 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[18][31][0] | Reset_IBUF                       |                9 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[20][31][0] | Reset_IBUF                       |               14 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[12][31][0] | Reset_IBUF                       |                9 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[19][31][0] | Reset_IBUF                       |                7 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[15][31][0] | Reset_IBUF                       |               13 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[13][31][0] | Reset_IBUF                       |                8 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[17][31][0] | Reset_IBUF                       |                8 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[1][0][0]   | Reset_IBUF                       |               12 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[2][31][0]  | Reset_IBUF                       |               10 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[30][31][0] | Reset_IBUF                       |               17 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[9][31][0]  | Reset_IBUF                       |               14 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[10][31][0] | Reset_IBUF                       |                8 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[8][31][0]  | Reset_IBUF                       |               17 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[14][31][0] | Reset_IBUF                       |               12 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[5][31][0]  | Reset_IBUF                       |               12 |             32 |
+| ~CLK_BUFG                         | ir_inst/regFile_reg[23][31][0] | Reset_IBUF                       |               16 |             32 |
+|  CLK_BUFG                         | control_unit/E[0]              | Reset_IBUF                       |               16 |             39 |
+| ~CLK_BUFG                         | control_unit/out[0]            |                                  |               22 |             40 |
+| ~CLK_BUFG                         |                                |                                  |               57 |            139 |
++-----------------------------------+--------------------------------+----------------------------------+------------------+----------------+
+
+
